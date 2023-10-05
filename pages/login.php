@@ -1,4 +1,6 @@
 
+<!-- todo  -->
+<!-- create for admin and user -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +34,7 @@
        </div>
       <div class="description">
       <div class="login-form">
-        <h2>Login</h2>
+        <h2>Admin Login</h2>
         <form>
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" placeholder="Enter your username" required>
