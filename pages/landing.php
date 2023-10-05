@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Móveis Customizados</title>
+    <title>CMS Beta</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -32,7 +32,6 @@
             <button class="button">Register Complaint</button>
             <button class="button">Complaint Status</button>
             <button class="button">Admin Login</button>
-
         </div>   
 </div>
     </div>
