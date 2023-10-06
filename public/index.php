@@ -4,6 +4,6 @@
 
 <?php
     echo "Hello, world";
-        header("Location: http://localhost/project/pages/logComplaint.php");
+        header("Location: http://localhost/project/pages/complaintStatus.php");
         exit();
 ?>
