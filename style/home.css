@@ -161,7 +161,7 @@ section {
   /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  width: min(1000px, 100%);
+  width: min(100vw, 100%);
   background: rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -178,11 +178,7 @@ section {
 }
 
 
-.card-child {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .card-child img {
     width: 5vh;
@@ -191,7 +187,11 @@ section {
 
 
 /* DESCRIPTION */
-
+.card-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
 .description {
   display: flex;
   flex-direction: column;
@@ -389,7 +389,8 @@ section {
   /* table css */
   
   table { 
-	width: 750px; 
+
+	width: 70vw; 
 	border-collapse: collapse; 
 	margin:50px auto;
 	}
@@ -464,3 +465,10 @@ only screen and (max-width: 760px),
 	}
 
 }
+
+
+
+
+/* button */
+
+

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/home.css">
 
-    <title>Home</title>
+    <title>Complaint Status</title>
 </head>
 
 
@@ -32,7 +32,11 @@
   <section>
       <div class="card">
         <div class="card-child">
-          <h1 class="user-title">Welcome Bhanupratap !</h1>
+          <h1 class="user-title">Welcome Bhanupratap ! <span class="xdgfds">
+            <button>Logout</button>
+          </span></h1>
+          <!-- button -->
+          
           <img class="image-container" src="../assets/user_avatar.svg" alt="user avatar" />
         </div>
 
@@ -42,20 +46,30 @@
               <table>
   <thead>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Job Title</th>
-      <th>Twitter</th>
+      <th>S.no</th>
+      <th>Complaint Title</th>
+      <th>Description</th>
+      <th>Author</th>
+      <th>Status</th>
+
     </tr>
   </thead>
   <tbody>
-    
-    <tr>
-      <td data-column="First Name">James</td>
-      <td data-column="Last Name">Matman</td>
-      <td data-column="Job Title">Chief Sandwich Eater</td>
-      <td data-column="Twitter">@james</td>
-    </tr>
+    <?php
+      for ($x = 0; $x <= 10; $x++) {
+      echo"  <tr>
+        <td data-column=> $x </td>
+        <td>Matman</td>
+        <td>Chief Sandwich Eater</td>
+        <td>@james</td>
+        <td>@james</td>
+
+      </tr>
+
+      ";
+      }
+    ?>
+
 
   </tbody>
 </table>    
