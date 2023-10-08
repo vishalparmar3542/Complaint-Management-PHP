@@ -1,6 +1,4 @@
 
-<!-- todo  -->
-<!-- create for admin and user -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,10 +41,23 @@
             exit();
           } 
 
-          $unique_token = time();
-          echo $unique_token;
-  
-          echo "<h1 class='user-title'>Welcome $user ! <span class='xdgfds'>";
+          include("../handlers/dbConnectivity.php");
+          $connection = dbConnectivity();
+          $query = "SELECT * FROM admin WHERE username = '$user';";
+          $result = mysqli_query($connection, $query);
+
+          if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                $username= $row["username"];
+                $position = $row["position"];
+                $image = $row["profileURL"];
+               echo "<img class='userProfile' alt='user profile' src = '$image'>";
+            }
+        }
+          
+
+          echo "<h1 class='user-title'>Welcome, $user ! <span class='xdgfds'><br>";
+          echo "<h4 class='position'>$position</h4>"
           ?>
           <form action='../handlers/auth.php' method='POST'>
             <button class='solveBtn' name='logout'>Logout</button>

@@ -26,11 +26,15 @@
 
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
+            $username= $row["username"];
+            $position = $row["position"];
+            $image = $row["profileURL"];
+            // setcookie("username", $username, time() + (86400 * 30), "/"); // 86400 = 1 day
             $_SESSION['user'] = $row["username"];
-            $unique_token = time();
             $_SESSION['logged'] = "1";
             header("Location: http://localhost/project/pages/complaints.php?user=" . $row["username"]);
-            echo "id" . $row["id"] . "username" . $row["username"];
+            exit();
+            // echo "id" . $row["id"] . "username" . $row["username"];
         }
     } else {
         header("Location: http://localhost/project/pages/login.php?status=0");

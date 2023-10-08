@@ -1,4 +1,3 @@
-for making connection with the database
 <?php 
 
 // establishing connection
