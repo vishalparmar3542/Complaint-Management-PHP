@@ -4,6 +4,7 @@
 <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../style/landing.css">
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width">
     <title>CMS Beta</title>
 </head>
@@ -31,13 +32,14 @@
   }
 
 .solveBtn:hover {
-  background-color: #0096C3;
+  background-color: #5000ca;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-3px);
 }
 
 .credits {
+    color: white;
 
    margin-top: 200px;
    font-weight: 500;
@@ -48,6 +50,43 @@
 
     </style>
 <body>
+
+<div class="container">
+	<div class="blob-container">
+    <div class="blob"></div>
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+    <div class="blob four"></div>
+    <div class="blob five"></div>
+    <div class="blob six"></div>
+    <div class="blob seven"></div>
+    <div class="blob eight"></div>
+    <div class="blob nine"></div>
+    <div class="blob ten"></div>
+    <div class="blob"></div>
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+    <div class="blob four"></div>
+    <div class="blob five"></div>
+    <div class="blob six"></div>
+    <div class="blob seven"></div>
+    <div class="blob eight"></div>
+    <div class="blob nine"></div>
+    <div class="blob ten"></div>
+    <div class="blob"></div>
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+    <div class="blob four"></div>
+    <div class="blob five"></div>
+    <div class="blob six"></div>
+    <div class="blob seven"></div>
+    <div class="blob eight"></div>
+    <div class="blob nine"></div>
+    <div class="blob ten"></div>
+  </div>
    
    <div id="hero">
 

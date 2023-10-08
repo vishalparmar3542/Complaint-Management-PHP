@@ -5,3 +5,4 @@
 5. Favicon: https://favicon.io/emoji-favicons/
 6. LoaderSVG: https://loading.io/
 7. LoadingScreen: https://codepen.io/The_Thunderaven/pen/rNeWemK
+8. background: https://getwaves.io/

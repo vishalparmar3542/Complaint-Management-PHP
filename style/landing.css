@@ -1,9 +1,14 @@
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  background-image: url('../assets/background.svg');
   margin: 0;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,150,195,0) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background: linear-gradient(0deg, #5000ca, 0%, rgba(0,150,195,0) 100%); */
 }
 
 .primary_img {
@@ -33,7 +38,7 @@ h1 span {
 }
 
 span, a {
-  color: #0096C3;
+  color: #5000ca;
 }
 
 p, #footer {
