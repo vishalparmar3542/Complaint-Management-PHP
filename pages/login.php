@@ -1,14 +1,12 @@
 
-<!-- todo  -->
-<!-- create for admin and user -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../style/login.css">
-
-    <title>Document</title>
+    <title>Admin Login - CMS</title>
 </head>
 <body>
 
@@ -43,13 +41,8 @@
           <button type="submit">Login</button>
         </form>
       </div>
-      <!-- <button>Join</button> -->
-        <!-- <p>Each color has its own psychological effects on individuals. Would you like to create an environment of stimulation or whet people’s appetite? Join us to examine the effects of colors!         </p> -->
     </div>
-    
-      <!-- <div class="title">
-         <h1><span>Complaint Management</span> System</p>
-       </div> -->
+
     </div>
 
   </section>
@@ -61,34 +54,3 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/home.css">
-    <title>Login Page</title>
-</head>
-<body>
-    <div class="left-side">
-        <h2>Welcome to Complaint Management System</h2>
-        <img src="your-image.jpg" alt="Company Logo">
-    </div>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form class="login-form" action="#" method="post">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login">
-            </div>
-        </form>
-    </div>
-</body>
-</html> -->

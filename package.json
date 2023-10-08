@@ -1,0 +1,22 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "simple complaint management system.",
+  "main": "index.js",
+  "bin": {
+    "cms": "bin/res.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wantedbear007/Complaint-Management-PHP.git"
+  },
+  "author": "@wantedbear007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wantedbear007/Complaint-Management-PHP/issues"
+  },
+  "homepage": "https://github.com/wantedbear007/Complaint-Management-PHP#readme"
+}

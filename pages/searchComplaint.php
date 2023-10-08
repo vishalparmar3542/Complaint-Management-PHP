@@ -1,16 +1,12 @@
-
-<!-- todo  -->
-<!-- create for admin and user -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-
     <link rel="stylesheet" href="../style/login.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 
-    <title>Log Complaint - CMS</title>
+    <title>Search Complaint - CMS</title>
 </head>
 <body>
 
@@ -32,31 +28,19 @@
   <section>
     <div class="card">
               <div class="title">
-         <h1><span>CMS<br></span> Log Complaint</p>
+         <h1><span>Search</span> Complaint</p>
        </div>
       <div class="description">
       <div class="login-form">
-        <h2>Complaint Details</h2>
+        <h2>Enter your Complaint ID</h2>
         <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="name">Contact number</label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="name">Title</label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="complaint">Complaint:</label><br>
-        <textarea id="complaint" name="complaint" rows="4" cols="50" required></textarea><br>
-
-          <button type="submit">Submit</button>
+          <label for="username">Complaint ID</label>
+          <input type="text" id="username" name="username" placeholder="Use Uppercase" required>
+          <button type="submit">Check</button>
         </form>
       </div>
     </div>
     
-
     </div>
 
   </section>
@@ -64,7 +48,6 @@
 
 </body>
 </html>
-
 
 
 

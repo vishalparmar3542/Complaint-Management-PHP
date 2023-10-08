@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../style/landing.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>CMS Beta</title>
 </head>
+<script type="module" src="../scripts/landingScripts.js">
+</script>
 <style>
     
     .solveBtn {
@@ -63,16 +64,25 @@
     </p>
     </div>
 
+
+  
+    
+    
     <div id="footer">
     <div class="line">
         <div class="button-container">
-            <button class="solveBtn">Register Complaint</button>
-            <button class="solveBtn">Complaint Status</button>
-            <button class="solveBtn">Admin Login</button>
-        </div>   
-</div>
-    </div>
+        <button class="solveBtn" onClick="hello('logComplaint.php')">Register Complaint</button>
+            <button class="solveBtn" onClick="hello('searchComplaint.php')">Complaint Status</button>
+            <button class="solveBtn" onClick="hello('login.php')">Admin Login</button>
+            </div>   
+            </div>
+            </div>
 
 <p class="credits">Wantedbear Productions😉</p>
 </body>
+
+<script src="../scripts/landingScripts.js">
+// <script type="module" src="../scripts/res.js">
+
+</script>
 </html>
