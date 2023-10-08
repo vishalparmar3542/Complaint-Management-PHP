@@ -37,22 +37,20 @@
           <?php
             session_start();
             echo $_SESSION['logged'];
+            $user = $_SESSION['user'];
           if ($_SESSION['logged'] != "1") {
-            echo "welcome ";
+            header("Location: http://localhost/project/pages/login.php");
+            exit();
           } 
 
           $unique_token = time();
           echo $unique_token;
-
-
-          
-
-          echo "hello there";
-        
-     
+  
+          echo "<h1 class='user-title'>Welcome $user ! <span class='xdgfds'>";
           ?>
-          <h1 class="user-title">Welcome Bhanupratap ! <span class="xdgfds">
-            <button class='solveBtn'>Logout</button>
+          <form action='../handlers/auth.php' method='POST'>
+            <button class='solveBtn' name='logout'>Logout</button>
+        </form>
           </span></h1>
           <!-- button -->
           

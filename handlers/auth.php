@@ -1,5 +1,17 @@
 <!-- for handling admin login -->
 <?php
+
+    if (isset($_POST['logout'])) {
+        echo "hello";
+        session_start();
+        // unset($_SESSION['logged']);
+        // unset($_SESSION['user']);
+
+        session_destroy();
+
+        header("Location: http://localhost/project/pages/login.php");
+        exit();
+    }
     $name = $_POST["username"];
     $pass = $_POST["password"];
 
