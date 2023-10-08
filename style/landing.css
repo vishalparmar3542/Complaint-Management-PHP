@@ -83,20 +83,32 @@ margin-left: 28px;
   justify-content: space-evenly;
 }
 
-.button {
-  background-color: #0096C3;
-  color: white;
+
+/* 
+.solveBtn {
+  text-align: center;
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
   border: none;
-  border-radius: 20px;
-  padding: 10px 0px;
-  margin-right: 10px;
-  width: 200px;
-  font-weight: 600;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
-}
+  outline: none;
+  }
 
-.button:hover {
-  background-color: #3db5da;
+.solveBtn:hover {
+  background-color: #0096C3;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-3px);
+} */
 
 
-}
