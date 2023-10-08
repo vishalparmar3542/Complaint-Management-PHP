@@ -50,7 +50,7 @@
   <section>
     <div class="card">
               <div class="title">
-         <h1><span>Complaint Management</span> System</p>
+         <h1 class="parentTitle">Complaint Management System</p>
        </div>
       <div class="description">
       <div class="login-form">

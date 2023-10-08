@@ -46,6 +46,7 @@
    letter-spacing: 3px;
    text-transform: uppercase;
    color: black;
+   filter: invert(70%);
 }
 
     </style>
@@ -93,11 +94,9 @@
    <img 
    class="primary_img"
     src="../assets/landing_main.svg" 
-    alt="vector graphics">
-   
+    alt="vector graphics">   
 
     <h1>Complaint <span>Management</span> System</h1>
-
     <p>
     Empower Your Voice, Resolve Your Concerns: Our Complaint Management System
     </p>
