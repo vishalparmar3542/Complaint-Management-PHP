@@ -16,33 +16,37 @@ function dbConnectivity() {
             die( "failed to connect " . mysqli_connect_error());
         } 
 
-        $query = "select * from auth;";
-// 
-    $result = mysqli_query($connection, $query);
-        echo "abc". $result;
-        // return $connection;
+        // $query = "select * from auth;";
+    // $result = mysqli_query($connection, $query);
+        return $connection;
 
     } catch (Exception $e) {
-        // return false;
+        return false;
     }
 }
 
-function getName() {
-    return "hello there";
-}
+// function getName() {
+//     return "hello there";
+// }
 
-dbConnectivity();
+// dbConnectivity();
 
-$connection = mysqli_connect(server, user, pass, db_name);
-if (!$connection) {
+// $connection = mysqli_connect(server, user, pass, db_name);
+// if (!$connection) {
 
-    die( "failed to connect " . mysqli_connect_error());
-} 
+//     die( "failed to connect " . mysqli_connect_error());
+// } 
 
-$query = "select * from auth;";
-// 
-$result = mysqli_query($connection, $query);
-echo "abc". $result;
+// $query = "select * from admin;";
+// // 
+// $result = mysqli_query($connection, $query);
+
+// if (mysqli_num_rows($result) > 0) {
+//     while($row = mysqli_fetch_assoc($result)) {
+//         echo "id" . $row["id"] . "username" . $row["username"];
+//     }
+// }
+
 // return $connection;
 
 

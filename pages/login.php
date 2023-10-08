@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,13 +56,22 @@
       <div class="description">
       <div class="login-form">
         <h2>Admin Login</h2>
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <form  action="../handlers/auth.php" method="POST">
+          <label for="username" >Username:</label>
+          <input  value="wantedbear007" type="text" id="username" name="username" placeholder="Enter your username" required>
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
-          <button type="submit">Login</button>
+          <input value="9907224577" type="password" id="password" name="password" placeholder="Enter your password" required>
+          <button type="submit" value="submit">Login</button>
         </form>
+          <?php
+            if ($_GET) {
+              $rec = $_GET["status"];
+              if ($rec == '0') {
+                echo "<p style='color: red; font-weight: 600'>Wrong credentials, Try again !</p>";
+              } 
+            }
+          ?>
+
       </div>
     </div>
 

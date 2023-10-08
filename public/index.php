@@ -34,8 +34,8 @@
         // header("Refresh: 5; http://localhost/project/pages/landing.php");
 
         // echo "Hello, world";
-        // header("Location: http://localhost/project/pages/complaints.php");
-        header("Location: http://localhost/project/handlers/dbConnectivity.php");
+        header("Location: http://localhost/project/pages/login.php");
+        // header("Location: http://localhost/project/handlers/auth.php");
 
         // exit();
 

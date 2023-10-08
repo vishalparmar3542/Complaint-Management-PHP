@@ -34,6 +34,23 @@
   <section>
       <div class="card">
         <div class="card-child">
+          <?php
+            session_start();
+            echo $_SESSION['logged'];
+          if ($_SESSION['logged'] != "1") {
+            echo "welcome ";
+          } 
+
+          $unique_token = time();
+          echo $unique_token;
+
+
+          
+
+          echo "hello there";
+        
+     
+          ?>
           <h1 class="user-title">Welcome Bhanupratap ! <span class="xdgfds">
             <button class='solveBtn'>Logout</button>
           </span></h1>
