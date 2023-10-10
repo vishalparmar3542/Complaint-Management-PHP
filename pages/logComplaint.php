@@ -1,6 +1,8 @@
 
 <!-- todo  -->
 <!-- create for admin and user -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,20 +39,17 @@
       <div class="description">
       <div class="login-form">
         <h2>Complaint Details</h2>
-        <form>
+        <form action = "../handlers/recordComplaint.php" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="name">Contact number</label>
-        <input type="text" id="name" name="name" required><br>
-
+        <input value='Adyut' type="text" id="name" name="name" required><br>
+        <label for="contact">Contact number</label>
+        <input value="9131987420" type="number" id="contact" name="contact" required><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="name">Title</label>
-        <input type="text" id="name" name="name" required><br>
-
+        <input value="kumaradyut@gmail.com" type="email" id="email" name="email" required><br>
+        <label for="title">Title</label>
+        <input value='Watch problem' type="text" id="title" name="title" required><br>
         <label for="complaint">Complaint:</label><br>
-        <textarea id="complaint" name="complaint" rows="4" cols="50" required></textarea><br>
-
+        <textarea id="complaint" name="complaint" rows="4" cols="50" required>My watch stopped working after water damage.</textarea><br>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -61,6 +60,24 @@
 
   </section>
 </div>
+<?php
+    $message = "Not recorded";
+
+  if ($_GET["success"]) {
+
+    $val =  $_GET["success"];
+
+    if ($val == '1') {
+      echo '<script>
+      alert("Updated Successfully")
+      </script>';
+    } else {
+      echo '<script>
+      alert("Error Occurred")
+      </script>';
+    }
+  }
+?>
 
 </body>
 </html>

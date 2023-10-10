@@ -84,7 +84,7 @@
       <th>Contact Number</th>
       <th>Email</th>
       <th>Title</th>
-      <th>Remarks</th>
+      <th>Description</th>
       <th>Status</th>
       <th>Remarks</th>
       <th>Mark Solved</th>
@@ -136,14 +136,18 @@
       <td>$contact</td>
       <td>$email</td>
       <td>$title</td>
-      <td>$description</td>
+      <td>
+
+      $description
+      </td>
       <strong>
       <td  class='solveStatus' style='color: $fontColor' >$remarkWord</td>
       </strong>
 
       <form action='../handlers/updateComplaint.php' method='POST'>
       <td>
-      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark'><br>
+      <p>$remarks</p>
+      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required><br>
       <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
       </td>
       <td>

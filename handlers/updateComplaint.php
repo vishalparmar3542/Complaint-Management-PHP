@@ -3,12 +3,13 @@
     try {
         if ($_POST) {
             $id = $_POST['uniqueId'];
+            $adminRemark = $_POST['adminRemark'];
             echo "name is:" . $id;
-            $connection = dbConnectivity();
-            
+            $connection = dbConnectivity();     
             $query = "UPDATE complaints SET status = 1 WHERE uniqueId = '$id'; ";
+            $query0 = "UPDATE complaints SET remarks = '$adminRemark' WHERE uniqueId = '$id';";
             
-            if (mysqli_query($connection, $query)) {
+            if (mysqli_query($connection, $query) && mysqli_query($connection, $query0)) {
                 echo "success";
                 header("Location: http://localhost/project/pages/complaints.php?success=1");
         } else {
