@@ -54,6 +54,12 @@
                echo "<img class='userProfile' alt='user profile' src = '$image'>";
             }
         }
+
+        // trial
+        
+
+          
+        // trial
           
 
           echo "<h1 class='user-title'>Welcome, $user ! <span class='xdgfds'><br>";
@@ -73,14 +79,16 @@
   <table>
   <thead>
     <tr>
-      <th>S.no</th>
-      <th>Complaint Title</th>
-      <th>Description</th>
-      <th>Author</th>
-      <th>SerialNumber</th>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Contact Number</th>
+      <th>Email</th>
+      <th>Title</th>
+      <th>Remarks</th>
       <th>Status</th>
       <th>Remarks</th>
-      <th>Resolve</th>
+      <th>Mark Solved</th>
+
     </tr>
   </thead>
   <tbody>
@@ -94,32 +102,60 @@
   
       return rand($min, $max);
   }
-      for ($x = 0; $x <= 10; $x++) {
-        $y = generateRandom5DigitNumber();
-      echo"  <tr>
-        <td data-column=> $x </td>
-        <td>Matman</td>
-        <td>Chief Sandwich Eater</td>
-        <td>@james</td>
-        <td>$y</td>
-        <strong>
-        <td class='solveStatus' id='solveStatus$x'>Not Solved</td>
-        </strong>
 
-        <form>
-        <td>
+  // getting data from database
 
-        <input placeholder='Write Remarks' type='text' id='name' name='name' required><br>
-        </td>
-        <td>
-        <button class='solveBtn' onClick='statusButton($x)'>Mark Solved</button>
-        </td>
+  // include("../handlers/dbConnectivity.php");
+  $connection = dbConnectivity();
 
-        </form>
+  $query = "SELECT * FROM complaints";
+  $results = mysqli_query($connection, $query);
 
-      </tr>
-      ";
+  if (mysqli_num_rows($results) > 0) {
+    while($row = mysqli_fetch_assoc($results)) {
+      $id= $row["id"];
+      $name = $row["name"];
+      $contact = $row["contact"];
+      $email = $row["email"];
+      $title = $row["title"];
+      $description = $row["description"];
+      $uniqueId = $row["uniqueId"];
+      $status = $row["status"];
+      $remarks = $row["remarks"];
+      $remarkWord = "Solved";
+      if ($status == '2') {
+        $remarkWord = "Not Solved";
       }
+
+
+      echo"  <tr>
+      <td data-column=> $uniqueId </td>
+      <td>$name</td>
+      <td>$contact</td>
+      <td>$email</td>
+      <td>$title</td>
+      <td>$description</td>
+      <strong>
+      <td  class='solveStatus'>$remarkWord</td>
+      </strong>
+
+      <form action='../handlers/updateComplaint.php' method='POST'>
+      <td>
+      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required ><br>
+      </td>
+      <td>
+      <button type='submit' value='submit' class='solveBtn'>Mark Solved</button>
+      </td>
+
+      </form>
+
+    </tr>
+    ";
+
+  }
+  }
+
+
     ?>
 
 
