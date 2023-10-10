@@ -405,15 +405,21 @@ tr:nth-of-type(odd) {
 	background: #eee; 
 	}
 
-th { 
-	background: #3498db; 
+
+  table {
+  }
+  th { 
+  /* border-radius: 20px; */
+	background: #5000ca; 
 	color: white; 
 	font-weight: bold; 
-	}
+  /* border-radius: 10px; */
+}
 
 td, th { 
+  border-style: none;
 	padding: 10px; 
-	border: 1px solid #ccc; 
+	/* border: 1px solid #ccc;  */
 	text-align: left; 
 	font-size: 18px;
 	}
@@ -532,4 +538,13 @@ only screen and (max-width: 760px),
 .position {
   font-size: 20px !important;
   color: #000 !important;
+}
+
+  
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

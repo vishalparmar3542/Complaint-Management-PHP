@@ -34,7 +34,7 @@
         <div class="card-child">
           <?php
             session_start();
-            echo $_SESSION['logged'];
+            // echo $_SESSION['logged'];
             $user = $_SESSION['user'];
           if ($_SESSION['logged'] != "1") {
             header("Location: http://localhost/project/pages/login.php");
@@ -70,7 +70,7 @@
 
           <div class="complaint-section">
               <h1 class="complaints-header">Complaints</h1>
-              <table>
+  <table>
   <thead>
     <tr>
       <th>S.no</th>
@@ -79,8 +79,8 @@
       <th>Author</th>
       <th>SerialNumber</th>
       <th>Status</th>
+      <th>Remarks</th>
       <th>Resolve</th>
-
     </tr>
   </thead>
   <tbody>
@@ -105,9 +105,18 @@
         <strong>
         <td class='solveStatus' id='solveStatus$x'>Not Solved</td>
         </strong>
+
+        <form>
+        <td>
+
+        <input placeholder='Write Remarks' type='text' id='name' name='name' required><br>
+        </td>
         <td>
         <button class='solveBtn' onClick='statusButton($x)'>Mark Solved</button>
         </td>
+
+        </form>
+
       </tr>
       ";
       }
