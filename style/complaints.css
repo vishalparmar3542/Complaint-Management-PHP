@@ -485,7 +485,7 @@ only screen and (max-width: 760px),
 
 
 .solveStatus {
-  color: red;
+  /* color: red; */
   font-weight: 600;
 }
 

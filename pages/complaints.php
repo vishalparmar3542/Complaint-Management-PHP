@@ -123,10 +123,12 @@
       $status = $row["status"];
       $remarks = $row["remarks"];
       $remarkWord = "Solved";
+      $fontColor = 'green';
       if ($status == '2') {
         $remarkWord = "Not Solved";
+        $fontColor = 'red';
       }
-
+      
 
       echo"  <tr>
       <td data-column=> $uniqueId </td>
@@ -136,12 +138,13 @@
       <td>$title</td>
       <td>$description</td>
       <strong>
-      <td  class='solveStatus'>$remarkWord</td>
+      <td  class='solveStatus' style='color: $fontColor' >$remarkWord</td>
       </strong>
 
       <form action='../handlers/updateComplaint.php' method='POST'>
       <td>
-      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required ><br>
+      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark'><br>
+      <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
       </td>
       <td>
       <button type='submit' value='submit' class='solveBtn'>Mark Solved</button>
@@ -169,7 +172,28 @@
 </div>
 
 </body>
+
+<?php
+    $message = "Not recorded";
+
+  if ($_GET["success"]) {
+
+    $val =  $_GET["success"];
+
+    if ($val == '1') {
+      echo '<script>
+      alert("Updated Successfully")
+      </script>';
+    } else {
+      echo '<script>
+      alert("Error Occurred")
+      </script>';
+    }
+  }
+?>
+
 <script src="../scripts/complaintsScript.js">
+
 </script>
 
 </html>

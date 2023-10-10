@@ -1,18 +1,22 @@
 <?php
-
-    function updateStatus
-    if ($_POST) {
-        $data = $_POST['adminRemark'];
-        echo "name is:" . $data;
+    include('dbConnectivity.php');
+    try {
+        if ($_POST) {
+            $id = $_POST['uniqueId'];
+            echo "name is:" . $id;
+            $connection = dbConnectivity();
+            
+            $query = "UPDATE complaints SET status = 1 WHERE uniqueId = '$id'; ";
+            
+            if (mysqli_query($connection, $query)) {
+                echo "success";
+                header("Location: http://localhost/project/pages/complaints.php?success=1");
+        } else {
+            echo "failed to register";
+            header("Location: http://localhost/project/pages/complaints.php?success=2");
+        }
     }
-
-    if (isset($_POST)) {
-        echo "hello there";
-    }
-    if (isset($_POST["adminRemark"])) {
-        echo "data found;";
-    }
-
+} catch(Exception $e) {
+    header("Location: http://localhost/project/pages/complaints.php?success=2");
+}
 ?>
-
-<!-- <td class='solveStatus' id='solveStatus'>Not Solved</td> -->
