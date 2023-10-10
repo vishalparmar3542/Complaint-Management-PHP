@@ -24,11 +24,11 @@
         $uniqueKey = generateUniqueKey();
 
 
-        echo "Name: " . $name . "<br>";
-        echo "Contact: " . $contact . "<br>";
-        echo "Email: " . $email . "<br>";
-        echo "Title: " . $title . "<br>";
-        echo "Complaint: " . $description . "<br>";
+        // echo "Name: " . $name . "<br>";
+        // echo "Contact: " . $contact . "<br>";
+        // echo "Email: " . $email . "<br>";
+        // echo "Title: " . $title . "<br>";
+        // echo "Complaint: " . $description . "<br>";
 
 
 
@@ -39,14 +39,11 @@
 
         if (mysqli_query($connection, $query)) {
             echo "Complaint added successfully!";
-            header("Location: http://localhost/project/pages/logComplaint.php?success=1");
+            header("Location: http://localhost/project/pages/logComplaint.php?success=1&id=$uniqueKey");
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($connection);
             header("Location: http://localhost/project/pages/logComplaint.php?success=2");
-
         }
-
-
     }
 
 } catch (Exception $e) {

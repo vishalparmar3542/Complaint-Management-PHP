@@ -1,8 +1,3 @@
-
-<!-- todo  -->
-<!-- create for admin and user -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,28 +36,38 @@
         <h2>Complaint Details</h2>
         <form action = "../handlers/recordComplaint.php" method="POST">
         <label for="name">Name:</label>
-        <input value='Adyut' type="text" id="name" name="name" required><br>
+        <input  type="text" id="name" name="name" required><br>
         <label for="contact">Contact number</label>
-        <input value="9131987420" type="number" id="contact" name="contact" required><br>
+        <input  type="number" id="contact" name="contact" required><br>
         <label for="email">Email:</label>
-        <input value="kumaradyut@gmail.com" type="email" id="email" name="email" required><br>
+        <input  type="email" id="email" name="email" required><br>
         <label for="title">Title</label>
-        <input value='Watch problem' type="text" id="title" name="title" required><br>
+        <input  type="text" id="title" name="title" required><br>
         <label for="complaint">Complaint:</label><br>
-        <textarea id="complaint" name="complaint" rows="4" cols="50" required>My watch stopped working after water damage.</textarea><br>
+        <textarea id="complaint" name="complaint" rows="4" cols="50" required></textarea><br>
           <button type="submit">Submit</button>
         </form>
+        <?php
+          if($_GET) {
+            
+            if ($_GET['id']) {
+              $ref = $_GET['id'];
+              echo "<h3 style='font-weight: 600; color: green'>Reference id: $ref</h3>";
+            }
+          }
+        ?>
       </div>
     </div>
     
 
     </div>
-
+    <form action="../handlers/goHome.php" method="POST">
+       <button class="homeBtn" href="http://localhost/project/pages/landing.php">Home</button>
+    </form>
   </section>
 </div>
 <?php
     $message = "Not recorded";
-
   if ($_GET["success"]) {
 
     $val =  $_GET["success"];

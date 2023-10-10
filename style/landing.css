@@ -89,8 +89,8 @@ margin-left: 28px;
 }
 
 
-/* 
-.solveBtn {
+
+.homeBtn {
   text-align: center;
   width: 140px;
   height: 45px;
@@ -109,11 +109,11 @@ margin-left: 28px;
   outline: none;
   }
 
-.solveBtn:hover {
-  background-color: #0096C3;
+.homeBtn:hover {
+  background-color: #5000ca;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-3px);
-} */
+}
 
 

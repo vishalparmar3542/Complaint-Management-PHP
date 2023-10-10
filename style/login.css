@@ -361,6 +361,35 @@ section {
   /* This code will create a transparent container with a login form on the right and the big text on the left within the container. You can style the login form further as needed. */
   
   
+  .homeBtn {
+    text-align: center;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+    color: #fff;
+
+    background-color: #000000;
+    }
+  
+  .homeBtn:hover {
+    background-color: #5000ca;
+
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-3px);
+  }
   
   
   

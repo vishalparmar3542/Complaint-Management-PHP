@@ -9,6 +9,7 @@
     <title>Search Complaint - CMS</title>
 </head>
 <body>
+  
 
 <div class="container">
 	<div class="blob-container">
@@ -25,6 +26,7 @@
     <div class="blob ten"></div>
   </div>
 
+
   <section>
     <div class="card">
               <div class="title">
@@ -33,15 +35,29 @@
       <div class="description">
       <div class="login-form">
         <h2>Enter your Complaint ID</h2>
-        <form>
-          <label for="username">Complaint ID</label>
-          <input type="text" id="username" name="username" placeholder="Use Uppercase" required>
+        <form action="complaint.php" method="GET">
+          <label for="complaintID">Complaint ID</label>
+          <input type="text" id="complaintID" name="complaintID" placeholder="Enter your Reference ID" >
           <button type="submit">Check</button>
         </form>
+        <?php
+            if ($_GET) {
+              if ($_GET['success'] == '2') {
+                  echo "<p style='color: red'>Complaint not found, Try again !</p>";
+              }
+
+              else if ($_GET['success'] == '3') {
+                echo "<p style='color: green'>Complaint deleted successfully.</p>";
+            }
+            }
+        ?>
       </div>
     </div>
     
     </div>
+    <form action="../handlers/goHome.php" method="POST">
+       <button class="homeBtn" href="http://localhost/project/pages/landing.php">Home</button>
+    </form>
 
   </section>
 </div>
