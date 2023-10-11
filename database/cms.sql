@@ -40,8 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `position`, `profileURL`) VALUES
-(1, 'wantedbear007', '9907224577', 'Lead Developer', 'https://bhanupratap-singh.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhanupratap.c3f0ef2d.png&w=1920&q=75'),
-(2, 'vishal', '9907224577', 'Support Developer', 'https://media.licdn.com/dms/image/D4D03AQEDAhgJKkVawA/profile-displayphoto-shrink_800_800/0/1688495623624?e=1702512000&v=beta&t=sTv4RrlMAfYds9-xeepn65__US1E0bj5cbIdjWQlm78');
+(1, 'wantedbear007', 'admin', 'Lead Developer', 'https://bhanupratap-singh.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhanupratap.c3f0ef2d.png&w=1920&q=75'),
+(2, 'vishal', 'admin', 'Support Developer', 'https://media.licdn.com/dms/image/D4D03AQEDAhgJKkVawA/profile-displayphoto-shrink_800_800/0/1688495623624?e=1702512000&v=beta&t=sTv4RrlMAfYds9-xeepn65__US1E0bj5cbIdjWQlm78');
 
 -- --------------------------------------------------------
 
