@@ -52,7 +52,6 @@
     <div class="card">
               <div class="title">
               <img src = "../assets/login_graphics.svg" class='logGraphics' style='height: 250px'/>
-
          <h1 style='font-size: 30px' class="parentTitle">Complaint Management System</p>
        </div>
       <div class="description">

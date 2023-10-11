@@ -31,7 +31,6 @@
     <div class="card">
               <div class="title">
               <img src = "../assets/search_graphics.svg" class='logGraphics' style='height: 250px'/>
-
          <h1 style='font-size: 35px'><span>Search</span> Complaint</p>
        </div>
       <div class="description">

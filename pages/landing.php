@@ -100,12 +100,7 @@
     <p>
     Empower Your Voice, Resolve Your Concerns: Our Complaint Management System
     </p>
-    </div>
-
-
-  
-    
-    
+    </div>  
     <div id="footer">
     <div class="line">
         <div class="button-container">
