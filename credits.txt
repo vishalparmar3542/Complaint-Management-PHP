@@ -1,8 +1,0 @@
-1. Landing page: https://codepen.io/ecemgo/pen/KKbvGvg
-2. Undraw: https://undraw.co/search
-3. Landing: https://codepen.io/MalunariDev/pen/YzOWeve
-4. Button: https://codepen.io/seme332/pen/reJOwo
-5. Favicon: https://favicon.io/emoji-favicons/
-6. LoaderSVG: https://loading.io/
-7. LoadingScreen: https://codepen.io/The_Thunderaven/pen/rNeWemK
-8. background: https://getwaves.io/
