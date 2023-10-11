@@ -25,5 +25,14 @@ A big thanks to [Vishal](https://github.com/vishalparmar3542) for his creative w
 
 Wantedbear Productions😉
 
+## Screenshots
+
+![Home Screen](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/home.png)
+![Login Page](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/login.png)
+![Register Complaint](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/register.png)
+![Complaint](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/adminHome.png)
+![Search Compalaint](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/search.png)
+![Complaint Status](https://github.com/wantedbear007/Complaint-Management-PHP/blob/main/Screenshots/status.png)
+
 
 
