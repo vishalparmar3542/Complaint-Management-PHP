@@ -2,11 +2,11 @@
 
 ## Installation
 
-<h3>Edit mySQL database config present in handlers/dbConnectivity.php</h3>
+Edit mySQL database config present in handlers/dbConnectivity.php
 
 ## Usage
 
-<h3>Start the website from public/index.php</h3>
+Start the website from public/index.php
 
 ## Credits
 
