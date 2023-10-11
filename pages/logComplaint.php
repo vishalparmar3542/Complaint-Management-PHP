@@ -29,7 +29,8 @@
   <section>
     <div class="card">
               <div class="title">
-         <h1><span>CMS<br></span> Log Complaint</p>
+                <img src = "../assets/graphics_log.svg" class='logGraphics' style='height: 250px'/>
+         <h1 style='font-size: 40px'><span>CMS<br></span> Log Complaint</p>
        </div>
       <div class="description">
       <div class="login-form">
@@ -68,8 +69,9 @@
 </div>
 <?php
     $message = "Not recorded";
-  if ($_GET["success"]) {
 
+    if ($_GET) {
+      if ($_GET["success"]) {
     $val =  $_GET["success"];
 
     if ($val == '1') {
@@ -81,6 +83,7 @@
       alert("Error Occurred")
       </script>';
     }
+  }
   }
 ?>
 

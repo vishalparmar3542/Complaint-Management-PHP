@@ -30,15 +30,17 @@
   <section>
     <div class="card">
               <div class="title">
-         <h1><span>Search</span> Complaint</p>
+              <img src = "../assets/search_graphics.svg" class='logGraphics' style='height: 250px'/>
+
+         <h1 style='font-size: 35px'><span>Search</span> Complaint</p>
        </div>
       <div class="description">
       <div class="login-form">
         <h2>Enter your Complaint ID</h2>
         <form action="complaint.php" method="GET">
           <label for="complaintID">Complaint ID</label>
-          <input type="text" id="complaintID" name="complaintID" placeholder="Enter your Reference ID" >
-          <button type="submit">Check</button>
+          <input type="text" id="complaintID" name="complaintID" required placeholder="Enter your Reference ID" >
+          <button type="submit">Search</button>
         </form>
         <?php
             if ($_GET) {

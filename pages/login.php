@@ -51,16 +51,18 @@
   <section>
     <div class="card">
               <div class="title">
-         <h1 class="parentTitle">Complaint Management System</p>
+              <img src = "../assets/login_graphics.svg" class='logGraphics' style='height: 250px'/>
+
+         <h1 style='font-size: 30px' class="parentTitle">Complaint Management System</p>
        </div>
       <div class="description">
       <div class="login-form">
         <h2>Admin Login</h2>
         <form  action="../handlers/auth.php" method="POST">
           <label for="username" >Username:</label>
-          <input  value="wantedbear007" type="text" id="username" name="username" placeholder="Enter your username" required>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
           <label for="password">Password:</label>
-          <input value="9907224577" type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
           <button type="submit" value="submit">Login</button>
         </form>
           <?php
