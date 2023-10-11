@@ -2,7 +2,9 @@
 
 ## Installation
 
-Edit mySQL database config present in handlers/dbConnectivity.php
+1. Edit mySQL database config present in handlers/dbConnectivity.php change username and password.
+2. Import database file to your local system database. (Used XAMPP while development).
+
 
 ## Usage
 
