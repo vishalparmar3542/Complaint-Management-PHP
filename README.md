@@ -21,6 +21,11 @@ This project was made possible with the help of the following resources:
 7. Loading screen layout by [The_Thunderaven](https://codepen.io/The_Thunderaven/pen/rNeWemK)
 8. Background design from [getwaves.io](https://getwaves.io/)
 
+## Known Bugs / Problems
+1. Non-responsive (CSS is boooooooring).
+2. Brute force appoach of developement.
+3. Code repetition.
+
 A big thanks to [Vishal](https://github.com/vishalparmar3542) for his creative work and open-source contribution.
 
 Wantedbear Productions😉
