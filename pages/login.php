@@ -1,5 +1,15 @@
 
 
+<?php
+session_start();
+if ($_SESSION) {
+  if ($_SESSION['logged'] == '1') {
+    echo "user is logged in"; 
+    header("Location: http://localhost/project/pages/complaints.php");
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,9 +69,9 @@
         <h2>Admin Login</h2>
         <form  action="../handlers/auth.php" method="POST">
           <label for="username" >Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          <input value='vishal' type="text" id="username" name="username" placeholder="Enter your username" required>
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input value="9907224577" type="password" id="password" name="password" placeholder="Enter your password" required>
           <button type="submit" value="submit">Login</button>
         </form>
           <?php
