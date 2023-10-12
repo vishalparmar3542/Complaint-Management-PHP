@@ -4,7 +4,7 @@
         if ($_POST) {
             $id = $_POST['uniqueId'];
             $adminRemark = $_POST['adminRemark'];
-            echo "name is:" . $id;
+            // echo "name is:" . $id;
             $connection = dbConnectivity();     
             $query = "UPDATE complaints SET status = 1 WHERE uniqueId = '$id'; ";
             $query0 = "UPDATE complaints SET remarks = '$adminRemark' WHERE uniqueId = '$id';";

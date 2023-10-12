@@ -1,6 +1,8 @@
 <!-- for handling admin login -->
 <?php
 
+try {
+
     if (isset($_POST['logout'])) {
         echo "hello";
         session_start();
@@ -15,7 +17,7 @@
     $name = $_POST["username"];
     $pass = $_POST["password"];
 
-    echo $name . $pass;
+    // echo $name . $pass;
     session_start();
 
     include("dbConnectivity.php");
@@ -41,4 +43,10 @@
         exit();
         // echo "hello";
     }
+
+} catch (Exception $e) {
+    echo "error occurred";
+}
+
+    
 ?>

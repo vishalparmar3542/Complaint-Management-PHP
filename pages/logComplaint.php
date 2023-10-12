@@ -37,20 +37,19 @@
         <h2>Complaint Details</h2>
         <form action = "../handlers/recordComplaint.php" method="POST">
         <label for="name">Name:</label>
-        <input  type="text" id="name" name="name" required><br>
+        <input  placeholder="Enter your name" type="text" id="name" name="name" required><br>
         <label for="contact">Contact number</label>
-        <input  type="number" id="contact" name="contact" required><br>
+        <input placeholder="Enter your Contact number" pattern="[789][0-9]{9}" type="text" id="contact" name="contact" required><br>
         <label for="email">Email:</label>
-        <input  type="email" id="email" name="email" required><br>
+        <input placeholder="Enter your email address"  type="email" id="email" name="email" required><br>
         <label for="title">Title</label>
-        <input  type="text" id="title" name="title" required><br>
+        <input placeholder="Title of your complaint"  type="text" id="title" name="title" required><br>
         <label for="complaint">Complaint:</label><br>
-        <textarea id="complaint" name="complaint" rows="4" cols="50" required></textarea><br>
+        <textarea placeholder="Explain your complaint briefly" id="complaint" name="complaint" rows="4" cols="50" required></textarea><br>
           <button type="submit">Submit</button>
         </form>
         <?php
           if($_GET) {
-            
             if ($_GET['id']) {
               $ref = $_GET['id'];
               echo "<h3 style='font-weight: 600; color: green'>Reference id: $ref</h3>";

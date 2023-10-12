@@ -88,7 +88,7 @@ if ($_SESSION) {
 
     </div>
     <form action="../handlers/goHome.php" method="POST">
-       <button class="homeBtn" href="http://localhost/project/pages/landing.php">Home</button>
+       <button class="homeBtn">Home</button>
     </form>
   </section>
 </div>

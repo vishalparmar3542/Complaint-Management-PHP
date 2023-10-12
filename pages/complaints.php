@@ -86,6 +86,7 @@
       <th>Title</th>
       <th>Description</th>
       <th>Status</th>
+      <th>Previous</th>
       <th>Remarks</th>
       <th>Mark Solved</th>
 
@@ -140,13 +141,15 @@
 
       $description
       </td>
+      <td>
+      $remarks
+      </td>
       <strong>
       <td  class='solveStatus' style='color: $fontColor' >$remarkWord</td>
       </strong>
 
       <form action='../handlers/updateComplaint.php' method='POST'>
       <td>
-      <p>$remarks</p>
       <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required><br>
       <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
       </td>
@@ -180,13 +183,13 @@
 <?php
     $message = "Not recorded";
 
-  if ($_GET["success"]) {
-
-    $val =  $_GET["success"];
-
-    if ($val == '1') {
-      echo '<script>
-      alert("Updated Successfully")
+    if ($_GET) {
+      try {
+      if ($_GET["success"]) {
+        $val =  $_GET["success"];      
+        if ($val == '1') {
+          echo '<script>
+          alert("Updated Successfully")
       </script>';
     } else {
       echo '<script>
@@ -194,6 +197,11 @@
       </script>';
     }
   }
+} catch (Exception $e) {
+
+}
+
+}
 ?>
 
 <script src="../scripts/complaintsScript.js">

@@ -24,30 +24,4 @@ function dbConnectivity() {
     }
 }
 
-// function getName() {
-//     return "hello there";
-// }
-
-// dbConnectivity();
-
-// $connection = mysqli_connect(server, user, pass, db_name);
-// if (!$connection) {
-
-//     die( "failed to connect " . mysqli_connect_error());
-// } 
-
-// $query = "select * from admin;";
-// // 
-// $result = mysqli_query($connection, $query);
-
-// if (mysqli_num_rows($result) > 0) {
-//     while($row = mysqli_fetch_assoc($result)) {
-//         echo "id" . $row["id"] . "username" . $row["username"];
-//     }
-// }
-
-// return $connection;
-
-
-
 ?>

@@ -63,8 +63,7 @@
 <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <link rel="stylesheet" href="../style/complaints.css">
-
-    <title>Complaint Status</title>
+    <title><?php echo 'Complaint '.$id?></title>
 </head>
 
 
@@ -110,12 +109,6 @@
       <th>Status</th>
       <th>Remarks</th>
       <th>Action</th>
-      <!-- <th>Title</th>
-      <th>Description</th>
-      <th>Status</th>
-      <th>Remarks</th>
-      <th>Mark Solved</th> -->
-
     </tr>
   </thead>
   <tbody>
