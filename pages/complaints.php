@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,6 +88,7 @@
       <th>Previous</th>
       <th>Remarks</th>
       <th>Mark Solved</th>
+      <th>a</th>
 
     </tr>
   </thead>
@@ -141,12 +141,13 @@
 
       $description
       </td>
-      <td>
-      $remarks
-      </td>
+      
       <strong>
       <td  class='solveStatus' style='color: $fontColor' >$remarkWord</td>
       </strong>
+      <td>
+      $remarks
+      </td>
 
       <form action='../handlers/updateComplaint.php' method='POST'>
       <td>
@@ -154,12 +155,36 @@
       <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
       </td>
       <td>
-      <button type='submit' value='submit' class='solveBtn'>Mark Solved</button>
+      <button type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
       </td>
 
       </form>
+      <td>
+      <span>
+      <button id='$uniqueId' class='solveBtn' onClick='abc($uniqueId)'>Details</button>
+      <div id='myModal' class='modal'>
+ 
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <span class='close' onclick='close1($uniqueId)'>&times;</span>
+            <h2>$uniqueId</h2>
+          </div>
+          <div class='modal-body'>
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class='modal-footer'>
+            <h3>Modal Footer</h3>
+          </div>
+        </div>
+        </span>
+      </td>
+      
 
+  
     </tr>
+
+
     ";
 
   }
@@ -169,8 +194,14 @@
     ?>
 
 
+
+
   </tbody>
 </table>    
+
+<!-- table section -->
+
+<!-- table section -->
         </div>
 
     </div>
@@ -209,7 +240,3 @@
 </script>
 
 </html>
-
-
-
-
