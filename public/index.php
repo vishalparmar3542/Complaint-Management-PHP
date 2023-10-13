@@ -30,12 +30,12 @@
 
 <?php
 
- 
-        header("Refresh: 3 ; http://localhost/project/pages/landing.php");
+
+      header("Refresh: 3 ; http://localhost/project/pages/landing.php");
 
         // echo "Hello, world";
         // header("Location: http://localhost/project/pages/login.php");
-        // header("Location: http://localhost/project/handlers/auth.php");
+         //header("Location: http://localhost/project/handlers/dbConnectivity.php");
         //yes changes reflected
         // exit();
 

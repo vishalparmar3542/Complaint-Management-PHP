@@ -45,7 +45,7 @@ try {
     }
 
 } catch (Exception $e) {
-    echo "error occurred";
+    echo "error occurred $e";
 }
 
     
