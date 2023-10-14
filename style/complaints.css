@@ -572,11 +572,9 @@ input {
 /* Modal Content */
 .modal-content {
   position: fixed;
-  bottom: 30%;
-  margin: 20%;
-
   background-color: #fefefe;
   width: 60%;
+  margin:10% 20%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -599,28 +597,39 @@ input {
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #4b42ca;
+  padding: 5px 16px;
+  background-color: #4704ac;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+  line-height: 3rem;
+  max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    text-align: center;
+}
+.modalHr{
 
+  border:5px dotted #3f0399;
+    border-bottom:0;
+    width: 7%;
+    margin: 5px auto 5px auto;
+}
 .modal-footer {
   padding: 2px 16px;
-  background-color: #3c40b1;
+  background-color: #3f0399;
   color: white;
 }
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {bottom: -300px; opacity: 0} 
-  to {bottom: 30%; opacity: 1}
+  to {bottom: 0; opacity: 1}
 }
 
 @keyframes slideIn {
   from {bottom: -300px; opacity: 0}
-  to {bottom: 30%; opacity: 1}
+  to {bottom:0 ; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {

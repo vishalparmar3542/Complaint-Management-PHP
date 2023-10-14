@@ -6,7 +6,7 @@ define("user", "root1");
 define("pass", "root");
 define("db_name", "cms");
 
-echo "hello";
+
 
 function dbConnectivity() {
     try {
@@ -17,7 +17,7 @@ function dbConnectivity() {
             
             exit();
         } else{
-           echo "connect";
+          
         }
 
         // $query = "select * from auth;";
