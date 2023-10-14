@@ -14,7 +14,7 @@ function abc(btn) {
 function close1(btn){
   document.getElementById(btn.id).parentElement.children[1].style.display = "none";
 }
-
+modal=document.getElementsByClassName("modal");
 
 
 // When the user clicks anywhere outside of the modal, close it
