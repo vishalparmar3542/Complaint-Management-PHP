@@ -123,6 +123,9 @@
       $uniqueId = $row["uniqueId"];
       $status = $row["status"];
       $remarks = $row["remarks"];
+      $createDate = $row["createdate"];
+      $updateDate = $row["updatedate"];
+      $department = $row["deapartment"];
       $remarkWord = "Solved";
       $fontColor = 'green';
       if ($status == '2') {
@@ -160,26 +163,34 @@
           </div>
           <div class='modal-body'>
             <p>
-            <p>Name:$name</p>
-            <p>Conatct:$contact</p>
-            <p>Email:$email</p>
-            <p>Title:$title</p>
-             <p>
-           Discription: $description
-         </p>
-        <p>Privious remark :  $remarks<p>
-            </p>
-           
+            <p><strong>Name  : </strong>$name</p>
+            <hr class='modalHr'>
+            <p><strong>Conatct:</strong>$contact</p>
+            <hr class='modalHr'>
+            <p><strong>Email:</strong>$email</p>
+            <hr class='modalHr'>
+            <p><strong>Title:</strong>$title</p>
+            <hr class='modalHr'>
+            <p><strong>Deapartmnet : </strong> $department<p>
+            <hr class='modalHr'>
+             <p><strong>Discription:</strong> $description </p>
+             <hr class='modalHr'>
+        <p><strong>Privious remark : </strong> $remarks<p>
+        <hr class='modalHr'>
+        <p><strong>Date of reporting:</strong> $createDate </p>
+             <p><strong>Last update date:</strong> $updateDate </p>
+             <hr class='modalHr'>
+        </p>
           </div>
           <div class='modal-footer'>
             
           <form action='../handlers/updateComplaint.php' method='POST'>
           
-          <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required><br>
-          <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
+          <input  placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required  >
+          <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId' >
           
           
-          <button type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
+          <button  type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
           
 
           </div>
