@@ -80,15 +80,15 @@
     <tr>
       <th>ID</th>
       <th>Username</th>
-      <th>Contact Number</th>
-      <th>Email</th>
+      <!-- <th>Contact Number</th>
+      <th>Email</th> -->
       <th>Title</th>
-      <th>Description</th>
+    
       <th>Status</th>
       <th>Previous</th>
       <th>Remarks</th>
-      <th>Mark Solved</th>
-      <th>a</th>
+  
+      <th></th>
 
     </tr>
   </thead>
@@ -134,28 +134,17 @@
       echo"  <tr>
       <td data-column=> $uniqueId </td>
       <td>$name</td>
-      <td>$contact</td>
-      <td>$email</td>
+      <!-- <td>$contact</td>
+       <td>$email</td>
+       -->
       <td>$title</td>
-      <td>
-
-      $description
-      </td>
+  
       
       <strong>
       <td  class='solveStatus' style='color: $fontColor' >$remarkWord</td>
       </strong>
       <td>
       $remarks
-      </td>
-
-      <form action='../handlers/updateComplaint.php' method='POST'>
-      <td>
-      <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required><br>
-      <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
-      </td>
-      <td>
-      <button type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
       </td>
 
       </form>
@@ -167,14 +156,32 @@
         <div class='modal-content'>
           <div class='modal-header'>
             <span class='close' onclick='close1($uniqueId)'>&times;</span>
-            <h2>$uniqueId</h2>
+            <p>Complaint ID: $uniqueId</p>
           </div>
           <div class='modal-body'>
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
+            <p>
+            <p>Name:$name</p>
+            <p>Conatct:$contact</p>
+            <p>Email:$email</p>
+            <p>Title:$title</p>
+             <p>
+           Discription: $description
+         </p>
+        <p>Privious remark :  $remarks<p>
+            </p>
+           
           </div>
           <div class='modal-footer'>
-            <h3>Modal Footer</h3>
+            
+          <form action='../handlers/updateComplaint.php' method='POST'>
+          
+          <input placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required><br>
+          <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId'>
+          
+          
+          <button type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
+          
+
           </div>
         </div>
         </span>
